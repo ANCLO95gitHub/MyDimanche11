@@ -29,8 +29,8 @@ class MainActivity : ComponentActivity() {
                 myCheckBox.text = "what do wantz"
         }
         myButtonSecondAc.setOnClickListener{
-            val intent = Intent(this, MainActivity2::class.java)
-            startActivity(intent)
+            val Intent = Intent(this, MainActivity2::class.java)
+            startActivity(Intent)
         }
         /*setContent {
             MyDimanche11Theme {

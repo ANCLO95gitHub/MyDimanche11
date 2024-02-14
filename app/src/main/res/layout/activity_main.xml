@@ -7,7 +7,7 @@
     android:name="HomeActivity"
     android:screenOrientation="landscape"
     android:theme="@style/Theme.AppCompat.Light"
-    android:windowSoftInputMode="stateHidden">
+    android:windowSoftInputMode="stateVisible">
 
     <TextView
         android:id="@+id/tvForActivity2"
@@ -16,4 +16,16 @@
         android:text="Activity 2"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/bMybutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="218dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="122dp"
+        android:text="Button" />
 </RelativeLayout>
