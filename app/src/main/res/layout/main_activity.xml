@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bButtonCenter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bouton CentrE"
+        android:textSize="40sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tVeNbAS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yellow TextView" />
+
+    <Button
+        android:id="@+id/bButtonTwisted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rotationX="25"
+        android:rotationY="-37"
+        android:text="Go to Next Screen" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTintMode="src_over"
+        android:ems="10"
+        android:hint="This is EMAIL"
+        android:inputType="textEmailAddress" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="163dp"
+        android:layout_height="match_parent">
+
+        <CheckBox
+            android:id="@+id/cbCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CheckBox"
+            android:hint="la case a mordre"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#9C27B0"
+            android:ems="10"
+            android:hint="Le Word"
+            android:inputType="textPassword"
+            android:text="fafa@afaf.org"
+            android:typeface="serif"
+            app:layout_constraintBottom_toTopOf="@+id/checkBox" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
