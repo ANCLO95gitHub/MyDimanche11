@@ -15,6 +15,7 @@ class MainActivity : ComponentActivity() {
         val myCheckBox =  findViewById<CheckBox>(R.id.cbCheckBox)
         val mybButtonTwisted = findViewById<Button>(R.id.bButtonTwisted)
         val myButtonSecondAc = findViewById<Button>(R.id.bButtonCenter)
+        val mybGoToGoogle = findViewById<Button>(R.id.bGoToGoogle)
         myCheckBox.setOnClickListener(){
             if(mybButtonTwisted.text =="clickedE")
                 mybButtonTwisted.text = "clickedEXXX"
@@ -30,6 +31,10 @@ class MainActivity : ComponentActivity() {
         }
         myButtonSecondAc.setOnClickListener{
             val intent = Intent(this, MainActivity2::class.java)
+            startActivity(intent)
+        }
+        mybGoToGoogle.setOnClickListener{
+            val intent = Intent(this, GoogleActivity::class.java)
             startActivity(intent)
         }
         /*setContent {
